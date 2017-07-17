@@ -7,7 +7,7 @@ import {
   StyleSheet,
   FlatList,
   TextInput,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 
 import RenderRow from './components/Row'
@@ -19,25 +19,44 @@ export default class App extends Component {
     this.state = {
       todoList: [
         {
-          id: 1,
-          title: "This is title one!"
+          title: "This is title one!",
+          completed: true
         },
         {
-          id: 2,
-          title: "This is title two!"
+          title: "This is title two!",
+          completed: true
         },
         {
-          id: 3,
-          title: "This is title three!"
+          title: "This is title three!",
+          completed: false
         }
-      ]
+      ],
+      todo: ""
     }
+
+    this._handleAddTodo = this._handleAddTodo.bind(this);
+    this._handleChange = this._handleChange.bind(this);
 
   }
 
   _renderItem = ({item}) => (
-    <RenderRow item={item} />
+    <RenderRow item={item} change={this._handleChange} />
   )
+
+  _handleAddTodo() {
+    this.setState({
+      todoList: [
+        ...this.state.todoList, {
+          title: this.state.todo
+        }
+      ]
+    });
+    this.setState({todo: null});
+  }
+
+  _handleChange(value) {
+    console.log(!value);
+  }
 
 
   render() {
@@ -45,8 +64,15 @@ export default class App extends Component {
       <View style={styles.container}>
         <View style={styles.header}>
           <TextInput style={styles.textInput}
-          placeholder="Add todo"></TextInput>
-          <TouchableOpacity style={styles.button}>
+          placeholder="Add todo"
+          onChangeText={(text) => {
+              this.setState({todo: text})
+            }
+          }
+          value={this.state.todo}
+          >
+          </TextInput>
+          <TouchableOpacity style={styles.button} onPress={this._handleAddTodo}>
             <Text style={styles.whiteText}>Add</Text>
           </TouchableOpacity>
         </View>
@@ -55,7 +81,7 @@ export default class App extends Component {
         </View>
         <FlatList
           data={this.state.todoList}
-          keyExtractor={item => item.id}
+          keyExtractor={(item, i) => i}
           renderItem={this._renderItem}
         />
       </View>
@@ -70,7 +96,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF'
   },
   header: {
-    flex: 0.1,
     flexDirection: 'row',
     marginTop: 8
   },
