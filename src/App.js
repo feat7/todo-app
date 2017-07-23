@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 
 import RenderRow from './components/Row'
+import Footer from './components/Footer'
 
 export default class App extends Component {
 
@@ -97,6 +98,7 @@ export default class App extends Component {
           renderItem={this._renderItem}
           extraData={this.state}
         />
+      <Footer />
       </View>
     );
   }
