@@ -5,20 +5,15 @@ import {
   View,
   Text,
   StyleSheet,
+  TouchableOpacity
 } from 'react-native';
 
 const footer = () => {
  return  (
     <View style={styles.container}>
-      <View style={styles.button}>
-        <Text>All</Text>
-      </View>
-      <View style={styles.button}>
-      <Text>Active</Text>
-      </View>
-      <View style={styles.button}>
-      <Text>Completed</Text>
-      </View>
+      <TouchableOpacity style={styles.button}><Text>All</Text></TouchableOpacity>
+      <TouchableOpacity style={styles.button}><Text>Active</Text></TouchableOpacity>
+      <TouchableOpacity style={styles.button}><Text>Completed</Text></TouchableOpacity>
     </View>
 )
 }
@@ -28,15 +23,18 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'flex-end',
-    justifyContent: 'center'
+    justifyContent: 'space-around',
+    padding: 4
   },
   button: {
     flex: 1,
-    padding: 16,
+    padding: 10,
     alignItems: 'center',
     backgroundColor: '#d3d3d3',
-    borderRightWidth: 1,
-    borderRightColor: '#000'
+    borderWidth: 1,
+    borderColor: '#000',
+    borderRadius: 50,
+    justifyContent: 'space-between'
   }
 });
 

@@ -32,7 +32,7 @@ export default class App extends Component {
           completed: false
         }
       ],
-      todo: ""
+      todo: null
     }
 
     this._handleAddTodo = this._handleAddTodo.bind(this);
@@ -45,13 +45,14 @@ export default class App extends Component {
   )
 
   _handleAddTodo() {
-    this.setState({
-      todoList: [
-        ...this.state.todoList, {
-          title: this.state.todo
-        }
-      ]
-    });
+    if(this.state.todo)
+      this.setState({
+        todoList: [
+          ...this.state.todoList, {
+            title: this.state.todo
+          }
+        ]
+      });
     this.setState({todo: null});
   }
 
@@ -125,6 +126,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     backgroundColor: '#9b59b6',
     borderRadius: 50,
+    borderWidth: 1,
+    borderColor: '#ddd'
   },
   whiteText: {
     color: '#ffffff'
