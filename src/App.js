@@ -110,13 +110,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#F5FCFF'
+    backgroundColor: '#ebebeb',
   },
   header: {
     flexDirection: 'row',
     padding: 4,
-    borderWidth: 1,
-    borderColor: '#000'
   },
   textInput: {
     flex:1,
@@ -140,5 +138,7 @@ const styles = StyleSheet.create({
   title: {
     backgroundColor: '#2c3e50',
     padding: 10,
+    borderWidth: 1,
+    borderColor: '#000'
   }
 });

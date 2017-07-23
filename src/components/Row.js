@@ -29,14 +29,21 @@ export default class Row extends Component {
 
 const styles = StyleSheet.create({
   rowContainer: {
+    flex: 1,
     flexDirection: 'row',
     padding: 6,
-    borderBottomWidth: 0.5,
-    borderBottomColor: '#ccc'
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd'
   },
   text: {
-    flex: 1
+    flex: 1,
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    fontSize: 16,
   },
   switch: {
+    flex: 0.34,
+    alignItems: 'flex-end',
+    justifyContent: 'flex-end'
   }
 })
