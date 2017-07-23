@@ -8,10 +8,28 @@ import {
   Switch
 } from 'react-native';
 
+export default class Row extends Component {
+
+  constructor() {
+    super(props);
+
+    
+  }
+
+  render() {
+    <View style={styles.rowContainer}>
+      <Text style={styles.text}>{item.title}</Text>
+      <Switch style={styles.switch} value={item.completed} onValueChange={(value) => this.setState({
+         }) } />
+    </View>
+  }
+}
+
 const renderRow = ({item, change}) => (
   <View style={styles.rowContainer}>
     <Text style={styles.text}>{item.title}</Text>
-    <Switch style={styles.switch} value={item.completed} onValueChange={change} />
+    <Switch style={styles.switch} value={item.completed} onValueChange={(value) => this.setState({
+       }) } />
   </View>
 )
 

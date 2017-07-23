@@ -54,7 +54,13 @@ export default class App extends Component {
     this.setState({todo: null});
   }
 
-  _handleChange(value) {
+  _handleChange(index, value) {
+    this.setState({
+      [
+        ...this.state.todoList[index].completed,
+        value
+      ]
+    })
     console.log(!value);
     //toggle change
   }
