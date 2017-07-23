@@ -77,7 +77,8 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <TextInput style={styles.textInput}
+          <TextInput underlineColorAndroid='transparent'
+          style={styles.textInput}
           placeholder="Add todo"
           onChangeText={(text) => {
               this.setState({todo: text})
@@ -91,7 +92,7 @@ export default class App extends Component {
           </TouchableOpacity>
         </View>
         <View style={styles.title}>
-          <Text style={styles.whiteText}>Your Todos</Text>
+          <Text style={[styles.whiteText, {fontSize: 16}]}>Your Todos</Text>
         </View>
         <FlatList
           data={this.state.todoList}
@@ -113,18 +114,22 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    marginTop: 8
+    padding: 4,
+    borderWidth: 1,
+    borderColor: '#000'
   },
   textInput: {
     flex:1,
-    flexDirection: 'column'
+    flexDirection: 'column',
+    borderWidth: 1,
+    borderRadius: 50,
+    borderColor: '#ddd',
   },
   button: {
-    flex: 0.3,
+    flex: 0.35,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 8,
-    backgroundColor: '#9b59b6',
+    backgroundColor: '#2c3e50',
     borderRadius: 50,
     borderWidth: 1,
     borderColor: '#ddd'
@@ -133,7 +138,7 @@ const styles = StyleSheet.create({
     color: '#ffffff'
   },
   title: {
-    backgroundColor: '#8e44ad',
+    backgroundColor: '#2c3e50',
     padding: 10,
   }
 });
