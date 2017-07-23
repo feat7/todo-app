@@ -56,6 +56,7 @@ export default class App extends Component {
 
   _handleChange(value) {
     console.log(!value);
+    //toggle change
   }
 
 
