@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react';
+import React, {Component} from 'react';
 import {
   View,
   Text,
@@ -10,28 +10,22 @@ import {
 
 export default class Row extends Component {
 
-  constructor() {
+  constructor(props) {
     super(props);
 
-    
   }
 
   render() {
-    <View style={styles.rowContainer}>
-      <Text style={styles.text}>{item.title}</Text>
-      <Switch style={styles.switch} value={item.completed} onValueChange={(value) => this.setState({
-         }) } />
-    </View>
+    let { item, index, change } = this.props;
+    return (
+      <View style={styles.rowContainer}>
+        <Text style={styles.text}>{item.title}</Text>
+        <Switch style={styles.switch} value={item.completed} onValueChange={ (value, targetItem = index) => { change(value, targetItem); } } />
+      </View>
+    )
   }
 }
 
-const renderRow = ({item, change}) => (
-  <View style={styles.rowContainer}>
-    <Text style={styles.text}>{item.title}</Text>
-    <Switch style={styles.switch} value={item.completed} onValueChange={(value) => this.setState({
-       }) } />
-  </View>
-)
 
 const styles = StyleSheet.create({
   rowContainer: {
@@ -46,5 +40,3 @@ const styles = StyleSheet.create({
   switch: {
   }
 })
-
-export default renderRow;

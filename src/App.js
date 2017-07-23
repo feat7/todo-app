@@ -39,8 +39,8 @@ export default class App extends Component {
 
   }
 
-  _renderItem = ({item}) => (
-    <RenderRow item={item} change={this._handleChange} />
+  _renderItem = ({item, index}) => (
+    <RenderRow item={item} index={index} change={this._handleChange} />
   )
 
   _handleAddTodo() {
@@ -54,14 +54,19 @@ export default class App extends Component {
     this.setState({todo: null});
   }
 
-  _handleChange(index, value) {
+  _handleChange(value, index) {
+    console.log(value);
+
+    let newList  = this.state.todoList;
+
+    // console.log(newList);
+    newList[index].completed = value;
     this.setState({
-      [
-        ...this.state.todoList[index].completed,
-        value
-      ]
-    })
-    console.log(!value);
+      todoList: newList
+    });
+
+    console.log(this.state);
+    // console.log("item", item);
     //toggle change
   }
 
@@ -90,6 +95,7 @@ export default class App extends Component {
           data={this.state.todoList}
           keyExtractor={(item, i) => i}
           renderItem={this._renderItem}
+          extraData={this.state}
         />
       </View>
     );
