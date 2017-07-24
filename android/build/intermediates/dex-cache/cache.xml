@@ -3,102 +3,39 @@
 
     <item
         is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_d609ffc40c69f527f7ea5f28179355762616e864.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_3b5aa08a4cc97ede3f9d8831b5794c7535301a7f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_5af2432f2d5dd567497cd52c8d368b8ae327b4b0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_41a900f9f3b38ef6d4c4761ac4a19491f6cee40c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_b07621bcb2d6889988cdc79f1bddc7df87435bf0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_b927c7013318f1cc900a09b5b64aff7bbf0d874f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/vinay/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_a48109c178e0471a2731186fa9fe6bbf737783dc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.46.3/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c5526d30278eb171f4a1325bd6b927c9057c91f4">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.46.3_5c52f5893f9e665548ec30a07e5e20e13db046a7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_8780b766ef346052e09ecbc9d37710578210a194.jar" />
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_ce12e840492aa021f41b602455a965d955ee31e6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_f6e219c2a2b9ada092773d03aba1e55756d32a23.jar" />
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_fb476c4509f6b82158865583a6e4e89ef18e74a8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_c8cbfec9956262b71a0a97b7e5cacaabe66fff29.jar" />
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_3edad646ae51cd9cc977a43bd94090de52b26e55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_39295e91085d26bdf1a6fdf676db1e35c769c1b4.jar" />
     </item>
     <item
         is-multidex="false"
@@ -107,61 +44,34 @@
         optimize="true"
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_e6628faf50fde45ee75cdbcab769fd570995c3a6.jar" />
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_e6628faf50fde45ee75cdbcab769fd570995c3a6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_b8f8815af396dda5e33fd726128792ba4d2eede2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_4ad527910acab9db9f981babd98562132cbf0d26.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_4689db4b69ccc9f45bb14775937c6c679d667fb4.jar" />
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_a41e5f3f7c843d5c79f9e2771bd7ab1733ce5ad0.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_cf2d7001d4f60d7a7bf99dfb6eee048a410ed25d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.46.3/jars/libs/infer-annotations-4.0.jar"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.46.3/jars/libs/infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_f91c6da14c1fc6f9ae4875c6b19126a4bce2158d.jar" />
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_f926fdc8013d9e547dcdac7e0f3e8d9421cde3be.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_2ec393aa404f01ad1aa62945c193c75d476e1475.jar" />
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_f88d33a9a3694f1d07e0440e645fbc385206add2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -170,25 +80,115 @@
         optimize="true"
         revision="23.0.1"
         sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_5069cc8abbb825ebb9de0beeeef08e786bafe8db.jar" />
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_5069cc8abbb825ebb9de0beeeef08e786bafe8db.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_a32f65087aa6a8551ff4b315c18685590e7dda60.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.46.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c5526d30278eb171f4a1325bd6b927c9057c91f4">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.46.3_81eb0ab00c0367cc0e0f6c58ac8940443c8b6cf0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_41a900f9f3b38ef6d4c4761ac4a19491f6cee40c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_e047130b898ffd3c3f9b1cd11e6e627c120a827b.jar" />
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_e75dd1d788c2a2c9fe0962f1c5e45501d0aff80f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_b927c7013318f1cc900a09b5b64aff7bbf0d874f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vinay/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_a48109c178e0471a2731186fa9fe6bbf737783dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_1b9f54d379d84f0e7b0246abcc07c08cb7c6ef58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_c8cbfec9956262b71a0a97b7e5cacaabe66fff29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_cb2c05df15c48a948510a259ca6d149c099a2fa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_b8f8815af396dda5e33fd726128792ba4d2eede2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/media/vinay/New Volume/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_45cfab7818a9bfbf6da595e1632c47c8e6a47f7e.jar" />
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_c11e37fe9d9c9fc30421d852449d1f44777e7703.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vinay/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/media/vinay/New Volume1/workspace/github/TodoApp/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_cf2d7001d4f60d7a7bf99dfb6eee048a410ed25d.jar" />
     </item>
 
 </items>

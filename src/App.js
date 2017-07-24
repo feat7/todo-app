@@ -32,11 +32,14 @@ export default class App extends Component {
           completed: false
         }
       ],
-      todo: null
+      todo: null,
+      show: 'All'
     }
 
     this._handleAddTodo = this._handleAddTodo.bind(this);
     this._handleChange = this._handleChange.bind(this);
+    this._changeTodo = this._changeTodo.bind(this);
+    this._showData = this._showData.bind(this);
 
   }
 
@@ -72,8 +75,31 @@ export default class App extends Component {
     //toggle change
   }
 
+  _changeTodo(type = 'All') {
+    this.setState({
+      show: type
+    })
+  }
+
+  _showData() {
+    switch (this.state.show) {
+      case 'All':
+        return this.state.todoList;
+        break;
+      case 'Completed':
+        return this.state.todoList.filter((value) => value.completed );
+        break;
+      case 'Active':
+        return this.state.todoList.filter((value) => !value.completed );
+        break;
+      default:
+        return this.state.todoList;
+    }
+  }
+
 
   render() {
+
     return (
       <View style={styles.container}>
         <View style={styles.header}>
@@ -92,15 +118,15 @@ export default class App extends Component {
           </TouchableOpacity>
         </View>
         <View style={styles.title}>
-          <Text style={[styles.whiteText, {fontSize: 16}]}>Your Todos</Text>
+          <Text style={[styles.whiteText, {fontSize: 16}]}>{this.state.show}</Text>
         </View>
         <FlatList
-          data={this.state.todoList}
+          data={this._showData()}
           keyExtractor={(item, i) => i}
           renderItem={this._renderItem}
           extraData={this.state}
         />
-      <Footer />
+      <Footer changeTodo={this._changeTodo} />
       </View>
     );
   }

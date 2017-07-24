@@ -8,15 +8,20 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const footer = () => {
- return  (
-    <View style={styles.container}>
-      <TouchableOpacity style={styles.button}><Text>All</Text></TouchableOpacity>
-      <TouchableOpacity style={styles.button}><Text>Active</Text></TouchableOpacity>
-      <TouchableOpacity style={styles.button}><Text>Completed</Text></TouchableOpacity>
-    </View>
-)
+export default class Footer extends Component {
+  render() {
+    let { changeTodo } = this.props;
+    return(
+      <View style={styles.container}>
+        <TouchableOpacity style={styles.button} onPress={() => changeTodo('All')}><Text>All</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => changeTodo('Active')}><Text>Active</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => changeTodo('Completed')}><Text>Completed</Text></TouchableOpacity>
+      </View>
+    )
+  }
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
@@ -37,5 +42,3 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between'
   }
 });
-
-export default footer;
