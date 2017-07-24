@@ -8,6 +8,7 @@ import {
   FlatList,
   TextInput,
   TouchableOpacity,
+  AsyncStorage
 } from 'react-native';
 
 import RenderRow from './components/Row'
@@ -17,24 +18,16 @@ export default class App extends Component {
 
   constructor() {
     super()
+
+
     this.state = {
       todoList: [
-        {
-          title: "This is title one!",
-          completed: true
-        },
-        {
-          title: "This is title two!",
-          completed: true
-        },
-        {
-          title: "This is title three!",
-          completed: false
-        }
+
       ],
       todo: null,
       show: 'All'
     }
+
 
     this._handleAddTodo = this._handleAddTodo.bind(this);
     this._handleChange = this._handleChange.bind(this);
@@ -43,20 +36,49 @@ export default class App extends Component {
 
   }
 
+
+  async _save() {
+    try {
+      await AsyncStorage.setItem('@TodoApp:todo', JSON.stringify(this.state));
+      console.log("saved!");
+    } catch (error) {
+      console.error(error);
+      // Error saving data
+    }
+  }
+
+  async _get() {
+    try {
+      const myArray = await AsyncStorage.getItem('@TodoApp:todo');
+      if (myArray !== null) {
+        // We have data!!
+        this.setState(JSON.parse(myArray));
+        console.log(JSON.parse(myArray));
+      }
+    } catch (error) {
+      // Error retrieving data
+    }
+  }
+
+
   _renderItem = ({item, index}) => (
     <RenderRow item={item} index={index} change={this._handleChange} />
   )
 
   _handleAddTodo() {
-    if(this.state.todo)
+    if(this.state.todo) {
       this.setState({
         todoList: [
           ...this.state.todoList, {
             title: this.state.todo
           }
-        ]
-      });
-    this.setState({todo: null});
+        ],
+        todo: null
+      }, () => this._save());
+    }
+
+
+
   }
 
   _handleChange(value, index) {
