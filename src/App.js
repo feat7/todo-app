@@ -28,12 +28,15 @@ export default class App extends Component {
       show: 'All'
     }
 
-
     this._handleAddTodo = this._handleAddTodo.bind(this);
     this._handleChange = this._handleChange.bind(this);
     this._changeTodo = this._changeTodo.bind(this);
     this._showData = this._showData.bind(this);
 
+  }
+
+  componentDidMount() {
+    this.setState({}, () => this._get());
   }
 
 
@@ -56,6 +59,7 @@ export default class App extends Component {
         console.log(JSON.parse(myArray));
       }
     } catch (error) {
+      console.error(error);
       // Error retrieving data
     }
   }
