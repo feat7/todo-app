@@ -6,7 +6,8 @@ import {
   Text,
   StyleSheet,
   Switch,
-  TouchableOpacity
+  TouchableOpacity,
+  Alert
 } from 'react-native';
 
 export default class Row extends Component {
@@ -20,7 +21,18 @@ export default class Row extends Component {
     let { item, index, change, deleteTodo } = this.props;
     return (
       <View style={styles.rowContainer}>
-        <TouchableOpacity onLongPress= { (targetItem = index) => { deleteTodo(index) } }>
+        <TouchableOpacity onLongPress= { 
+          (targetItem = index) => { 
+            Alert.alert(
+              'Delete Todo?',
+              'Are you sure to delete this todo?',
+              [
+                {text: 'Yes', onPress: (index) => deleteTodo(index) },
+                {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+              ]
+            )
+          } 
+        }>
           <Text style={styles.text}>{item.title}</Text>
         </TouchableOpacity>
         <Switch style={styles.switch} value={item.completed} onValueChange={ (value, targetItem = index) => { change(value, targetItem); } } />
