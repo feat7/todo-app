@@ -5,7 +5,8 @@ import {
   View,
   Text,
   StyleSheet,
-  Switch
+  Switch,
+  TouchableOpacity
 } from 'react-native';
 
 export default class Row extends Component {
@@ -16,10 +17,12 @@ export default class Row extends Component {
   }
 
   render() {
-    let { item, index, change } = this.props;
+    let { item, index, change, deleteTodo } = this.props;
     return (
       <View style={styles.rowContainer}>
-        <Text style={styles.text}>{item.title}</Text>
+        <TouchableOpacity onLongPress= { (targetItem = index) => { deleteTodo(index) } }>
+          <Text style={styles.text}>{item.title}</Text>
+        </TouchableOpacity>
         <Switch style={styles.switch} value={item.completed} onValueChange={ (value, targetItem = index) => { change(value, targetItem); } } />
       </View>
     )
@@ -32,7 +35,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     padding: 6,
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.5,
     borderBottomColor: '#ddd'
   },
   text: {
@@ -40,9 +43,10 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     fontSize: 16,
+    color: '#000'
   },
   switch: {
-    flex: 0.34,
+    flex: 0.2,
     alignItems: 'flex-end',
     justifyContent: 'flex-end'
   }

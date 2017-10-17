@@ -31,6 +31,7 @@ export default class App extends Component {
     this._handleAddTodo = this._handleAddTodo.bind(this);
     this._handleChange = this._handleChange.bind(this);
     this._changeTodo = this._changeTodo.bind(this);
+    this._deleteTodo = this._deleteTodo.bind(this);
     this._showData = this._showData.bind(this);
 
   }
@@ -66,7 +67,7 @@ export default class App extends Component {
 
 
   _renderItem = ({item, index}) => (
-    <RenderRow item={item} index={index} change={this._handleChange} />
+    <RenderRow item={item} index={index} change={this._handleChange} deleteTodo={this._deleteTodo} />
   )
 
   _handleAddTodo() {
@@ -86,7 +87,6 @@ export default class App extends Component {
   }
 
   _handleChange(value, index) {
-    console.log(value);
 
     let newList  = this.state.todoList;
 
@@ -95,8 +95,6 @@ export default class App extends Component {
     this.setState({
       todoList: newList
     }, () => this._save());
-
-    console.log(this.state);
     // console.log("item", item);
     //toggle change
   }
@@ -105,6 +103,15 @@ export default class App extends Component {
     this.setState({
       show: type
     })
+  }
+
+  _deleteTodo(index) {
+    let newList  = this.state.todoList;
+    
+    newList.splice(index, 1);
+    this.setState({
+      todoList: newList
+    }, () => this._save())
   }
 
   _showData() {
@@ -162,7 +169,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#ebebeb',
+    backgroundColor: '#fff',
   },
   header: {
     flexDirection: 'row',
