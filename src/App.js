@@ -94,7 +94,7 @@ export default class App extends Component {
     newList[index].completed = value;
     this.setState({
       todoList: newList
-    });
+    }, () => this._save());
 
     console.log(this.state);
     // console.log("item", item);
